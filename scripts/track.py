@@ -8,6 +8,7 @@ Usage:
 """
 import csv
 import sys
+from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -31,11 +32,17 @@ def save(rows):
 
 
 def render(rows):
-    lines = ["# My Applications\n", "| # | Company | Role | Date Applied | Status | Notes |",
-              "|---|---|---|---|---|---|"]
+    today = date.today()
+    lines = ["# My Applications\n", "| # | Company | Role | Date Applied | Days Old | Status | Notes |",
+              "|---|---|---|---|---|---|---|"]
     for i, r in enumerate(rows):
+        try:
+            applied_date = date.fromisoformat(r["date_applied"])
+            days_old = (today - applied_date).days
+        except (ValueError, KeyError):
+            days_old = "Unknown"
         lines.append(
-            f"| {i} | {r['company']} | {r['role']} | {r['date_applied']} | {r['status']} | {r.get('notes','')} |"
+            f"| {i} | {r['company']} | {r['role']} | {r['date_applied']} | {days_old} | {r['status']} | {r.get('notes','')} |"
         )
     (ROOT / "APPLICATIONS.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

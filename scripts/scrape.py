@@ -90,11 +90,12 @@ def write_readme(listings, fetched_sources):
     lines.append(f"**Active listings:** {len(active)} (of {len(listings)} total seen)\n")
     lines.append("See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.\n")
 
+    today = datetime.now(timezone.utc).date()
     for cat in sorted(by_category):
         rows = by_category[cat]
         lines.append(f"\n## {cat} ({len(rows)})\n")
-        lines.append("| Company | Role | Location | Terms | Sources |")
-        lines.append("|---|---|---|---|---|")
+        lines.append("| Company | Role | Location | Terms | Date Posted | Days Old | Sources |")
+        lines.append("|---|---|---|---|---|---|---|")
         for l in rows:
             company = l.get("company_name", "")
             title = l.get("title", "")
@@ -103,7 +104,17 @@ def write_readme(listings, fetched_sources):
             terms = ", ".join(l.get("terms", []) or [])
             srcs = ", ".join(l.get("_sources", []))
             company_cell = f"[{company}]({url})" if url else company
-            lines.append(f"| {company_cell} | {title} | {loc} | {terms} | {srcs} |")
+
+            date_posted_ts = l.get("date_posted")
+            if date_posted_ts:
+                posted_date = datetime.fromtimestamp(date_posted_ts, tz=timezone.utc).date()
+                date_str = posted_date.strftime("%Y-%m-%d")
+                days_old = (today - posted_date).days
+            else:
+                date_str = "Unknown"
+                days_old = "Unknown"
+
+            lines.append(f"| {company_cell} | {title} | {loc} | {terms} | {date_str} | {days_old} | {srcs} |")
 
     (ROOT / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 

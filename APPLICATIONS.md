@@ -1,4 +1,4 @@
 # My Applications
 
-| # | Company | Role | Date Applied | Status | Notes |
-|---|---|---|---|---|---|
+| # | Company | Role | Date Applied | Days Old | Status | Notes |
+|---|---|---|---|---|---|---|
