@@ -4,9 +4,9 @@ repos into one deduplicated README table.
 
 Sources (each maintains a machine-readable listings.json fed by their own
 scrapers/bots):
-  - SimplifyJobs/Summer2026-Internships
-  - vanshb03/Summer2026-Internships
-  - speedyapply/2026-SWE-College-Jobs
+  - SimplifyJobs/Summer2026-Internships (MIT)
+  - vanshb03/Summer2026-Internships (MIT)
+  - vanshb03/Summer2027-Internships (MIT)
 """
 import json
 import re
@@ -22,8 +22,9 @@ DATA_DIR.mkdir(exist_ok=True)
 LISTINGS_DIR.mkdir(exist_ok=True)
 
 SOURCES = {
-    "simplify": "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json",
-    "vanshb03": "https://raw.githubusercontent.com/vanshb03/Summer2026-Internships/dev/.github/scripts/listings.json",
+    "simplify-2026": "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json",
+    "vanshb03-2026": "https://raw.githubusercontent.com/vanshb03/Summer2026-Internships/dev/.github/scripts/listings.json",
+    "vanshb03-2027": "https://raw.githubusercontent.com/vanshb03/Summer2027-Internships/dev/.github/scripts/listings.json",
 }
 
 HEADERS = {"User-Agent": "internship-tracker/1.0 (personal aggregator)"}
@@ -151,13 +152,28 @@ def write_listings(listings, fetched_sources):
     for stale in existing_files - written_files:
         stale.unlink()
 
-    # slim index
-    index = ["# Internship & New Grad Job Tracker\n"]
+    # slim index — header is static/SEO-oriented, body is regenerated daily
+    index = [
+        "# Internship Tracker — Summer 2026 & Summer 2027 Internships + New Grad Jobs\n",
+        "A daily-updated, deduplicated list of **software engineering, AI/ML, data science, "
+        "hardware, quant, and product internships and new grad roles**, aggregated from "
+        "multiple community-maintained sources into one place, browsable by category.\n",
+        "If you're searching for a **Summer 2027 internships GitHub repo**, a "
+        "**Summer 2026 internships tracker**, or a **new grad software engineering jobs list**, "
+        "this aggregates several of those trackers so you don't have to check each one.\n",
+        "⭐ Star this repo to get notified of new listings, or watch it for daily updates.\n",
+        "## How this works\n",
+        "A script pulls the latest active listings from the source repos below every day, "
+        "merges and deduplicates them by company + role + location, and rewrites this index "
+        "and the per-category files in [`listings/`](listings/). See "
+        "[ATTRIBUTION.md](ATTRIBUTION.md) for source licensing and credit, and "
+        "[USAGE.md](USAGE.md) for how to run the scripts yourself.\n",
+    ]
     index.append(
-        f"Aggregated daily from {', '.join(fetched_sources) or 'cached data'} "
-        f"(deduplicated, active listings only). Last refreshed: {refreshed_at}.\n"
+        f"Last refreshed: {refreshed_at}. "
+        f"Sources currently live: {', '.join(fetched_sources) or 'none (using cached data)'}.\n"
     )
-    index.append(f"**Active listings:** {len(active)} (of {len(listings)} total seen)\n")
+    index.append(f"**Active listings:** {len(active)} (of {len(listings)} total seen across all sources)\n")
     index.append("See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.\n")
     index.append("\n## Categories\n")
     index.append("| Category | Listings |")
