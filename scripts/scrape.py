@@ -17,7 +17,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DATA_DIR = ROOT / "data"
+LISTINGS_DIR = ROOT / "listings"
 DATA_DIR.mkdir(exist_ok=True)
+LISTINGS_DIR.mkdir(exist_ok=True)
 
 SOURCES = {
     "simplify": "https://raw.githubusercontent.com/SimplifyJobs/Summer2026-Internships/dev/.github/scripts/listings.json",
@@ -35,6 +37,29 @@ def fetch_json(url: str):
 
 def norm(s: str) -> str:
     return re.sub(r"\s+", " ", (s or "")).strip().lower()
+
+
+def slugify(s: str) -> str:
+    s = re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
+    return s or "other"
+
+
+CATEGORY_ALIASES = {
+    "software": "Software Engineering",
+    "software engineering": "Software Engineering",
+    "ai/ml/data": "Data Science, AI & Machine Learning",
+    "data science, ai & machine learning": "Data Science, AI & Machine Learning",
+    "hardware": "Hardware Engineering",
+    "hardware engineering": "Hardware Engineering",
+    "quant": "Quantitative Finance",
+    "quantitative finance": "Quantitative Finance",
+    "product": "Product Management",
+    "product management": "Product Management",
+}
+
+
+def normalize_category(cat: str) -> str:
+    return CATEGORY_ALIASES.get(norm(cat), cat or "Other")
 
 
 def dedup_key(item: dict) -> str:
@@ -67,56 +92,80 @@ def main():
         json.dumps(listings, indent=2), encoding="utf-8"
     )
 
-    write_readme(listings, fetched_sources)
+    write_listings(listings, fetched_sources)
     print(f"Merged {len(listings)} unique listings from {fetched_sources}")
 
 
-def write_readme(listings, fetched_sources):
+def category_table(rows, today):
+    lines = ["| Company | Role | Location | Terms | Date Posted | Days Old | Sources |",
+             "|---|---|---|---|---|---|---|"]
+    for l in rows:
+        company = l.get("company_name", "")
+        title = l.get("title", "")
+        url = l.get("url", "")
+        loc = ", ".join(l.get("locations", []) or [])
+        terms = ", ".join(l.get("terms", []) or [])
+        srcs = ", ".join(l.get("_sources", []))
+        company_cell = f"[{company}]({url})" if url else company
+
+        date_posted_ts = l.get("date_posted")
+        if date_posted_ts:
+            posted_date = datetime.fromtimestamp(date_posted_ts, tz=timezone.utc).date()
+            date_str = posted_date.strftime("%Y-%m-%d")
+            days_old = (today - posted_date).days
+        else:
+            date_str = "Unknown"
+            days_old = "Unknown"
+
+        lines.append(f"| {company_cell} | {title} | {loc} | {terms} | {date_str} | {days_old} | {srcs} |")
+    return lines
+
+
+def write_listings(listings, fetched_sources):
     active = [l for l in listings if l.get("active", True) and l.get("is_visible", True)]
     by_category = defaultdict(list)
     for l in active:
-        cat = l.get("category") or "Other"
+        cat = normalize_category(l.get("category"))
         by_category[cat].append(l)
     for cat in by_category:
         by_category[cat].sort(key=lambda x: x.get("date_posted", 0), reverse=True)
 
-    lines = []
-    lines.append("# Internship & New Grad Job Tracker\n")
-    lines.append(
-        f"Aggregated daily from {', '.join(fetched_sources) or 'cached data'} "
-        f"(deduplicated, active listings only). Last refreshed: "
-        f"{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}.\n"
-    )
-    lines.append(f"**Active listings:** {len(active)} (of {len(listings)} total seen)\n")
-    lines.append("See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.\n")
-
     today = datetime.now(timezone.utc).date()
+    refreshed_at = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+
+    # one file per category under listings/
+    existing_files = set(LISTINGS_DIR.glob("*.md"))
+    written_files = set()
+    category_links = []
     for cat in sorted(by_category):
         rows = by_category[cat]
-        lines.append(f"\n## {cat} ({len(rows)})\n")
-        lines.append("| Company | Role | Location | Terms | Date Posted | Days Old | Sources |")
-        lines.append("|---|---|---|---|---|---|---|")
-        for l in rows:
-            company = l.get("company_name", "")
-            title = l.get("title", "")
-            url = l.get("url", "")
-            loc = ", ".join(l.get("locations", []) or [])
-            terms = ", ".join(l.get("terms", []) or [])
-            srcs = ", ".join(l.get("_sources", []))
-            company_cell = f"[{company}]({url})" if url else company
+        slug = slugify(cat)
+        path = LISTINGS_DIR / f"{slug}.md"
+        written_files.add(path)
+        category_links.append((cat, slug, len(rows)))
 
-            date_posted_ts = l.get("date_posted")
-            if date_posted_ts:
-                posted_date = datetime.fromtimestamp(date_posted_ts, tz=timezone.utc).date()
-                date_str = posted_date.strftime("%Y-%m-%d")
-                days_old = (today - posted_date).days
-            else:
-                date_str = "Unknown"
-                days_old = "Unknown"
+        lines = [f"# {cat} ({len(rows)})\n", "[← back to index](../README.md)\n"]
+        lines += category_table(rows, today)
+        path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
-            lines.append(f"| {company_cell} | {title} | {loc} | {terms} | {date_str} | {days_old} | {srcs} |")
+    for stale in existing_files - written_files:
+        stale.unlink()
 
-    (ROOT / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    # slim index
+    index = ["# Internship & New Grad Job Tracker\n"]
+    index.append(
+        f"Aggregated daily from {', '.join(fetched_sources) or 'cached data'} "
+        f"(deduplicated, active listings only). Last refreshed: {refreshed_at}.\n"
+    )
+    index.append(f"**Active listings:** {len(active)} (of {len(listings)} total seen)\n")
+    index.append("See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.\n")
+    index.append("\n## Categories\n")
+    index.append("| Category | Listings |")
+    index.append("|---|---|")
+    for cat, slug, count in category_links:
+        index.append(f"| [{cat}](listings/{slug}.md) | {count} |")
+
+    (ROOT / "README.md").write_text("\n".join(index) + "\n", encoding="utf-8")
 
 
 if __name__ == "__main__":
