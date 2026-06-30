@@ -23,9 +23,9 @@ This writes to `data/applications.csv` and regenerates [APPLICATIONS.md](APPLICA
 
 A script pulls the latest active listings from the source repos below every day, merges and deduplicates them by company + role + location, and rewrites this index and the per-category files in [`listings/`](listings/). See [ATTRIBUTION.md](ATTRIBUTION.md) for source licensing and credit, and [USAGE.md](USAGE.md) for how to run the scripts yourself.
 
-Last refreshed: 2026-06-30 03:26 UTC. Sources currently live: simplify-2026, vanshb03-2026, vanshb03-2027.
+Last refreshed: 2026-06-30 15:23 UTC. Sources currently live: simplify-2026, vanshb03-2026, vanshb03-2027.
 
-**Active listings:** 1233 (of 13704 total seen across all sources)
+**Active listings:** 1235 (of 13705 total seen across all sources)
 
 See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.
 
@@ -39,4 +39,4 @@ See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.
 | [Other](listings/other.md) | 111 |
 | [Product Management](listings/product-management.md) | 22 |
 | [Quantitative Finance](listings/quantitative-finance.md) | 46 |
-| [Software Engineering](listings/software-engineering.md) | 391 |
+| [Software Engineering](listings/software-engineering.md) | 393 |

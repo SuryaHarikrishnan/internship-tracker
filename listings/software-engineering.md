@@ -1,9 +1,11 @@
-# Software Engineering (391)
+# Software Engineering (393)
 
 [← back to index](../README.md)
 
 | Company | Role | Location | Terms | Date Posted | Days Old | Sources |
 |---|---|---|---|---|---|---|
+| [KRAFTON](https://job-boards.greenhouse.io/studiokraftonboard/jobs/8613468002) | Programming Intern | Montreal, QC, Canada | Fall 2026 | 2026-06-30 | 0 | simplify-2026 |
+| [Worcester Polytechnic Institute](https://wpi.wd5.myworkdayjobs.com/WPI_External_Career_Site/job/Worcester/Temporary-Research-Software-Engineer_R0003515) | Research Software Engineer | Worcester, MA | N/A | 2026-06-30 | 0 | simplify-2026 |
 | [Palantir](https://jobs.lever.co/palantir/f221738b-e97c-4ce3-a12a-17ada2b855e4/apply) | Software Engineer Intern - Infrastructure | Palo Alto, CA | Winter 2028, Spring 2028, Summer 2028 | 2026-06-29 | 1 | simplify-2026 |
 | [Palantir](https://jobs.lever.co/palantir/f17e98d0-046a-4e6e-9d65-ed0b12dd0ff7/apply) | Software Engineer Intern - Defense Tech | Washington, DC | Winter 2028, Spring 2028, Summer 2028 | 2026-06-29 | 1 | simplify-2026 |
 | [Palantir](https://jobs.lever.co/palantir/bdcfb29f-4f27-42de-933f-7f83a359b9f0/apply) | Software Engineer Intern | Washington, DC | Winter 2028, Spring 2028, Summer 2028 | 2026-06-29 | 1 | simplify-2026 |
