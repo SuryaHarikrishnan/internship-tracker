@@ -6,13 +6,26 @@ If you're searching for a **Summer 2027 internships GitHub repo**, a **Summer 20
 
 ⭐ Star this repo to get notified of new listings, or watch it for daily updates.
 
+## Track your own applications, not just browse listings
+
+Most listing repos stop at the list. This one also gives you a personal application tracker that lives next to the data:
+
+```
+git clone https://github.com/SuryaHarikrishnan/internship-tracker
+cd internship-tracker
+python scripts/track.py add "Company" "Role" "2026-06-29" "Applied"
+python scripts/track.py render
+```
+
+This writes to `data/applications.csv` and regenerates [APPLICATIONS.md](APPLICATIONS.md) with a *days-since-applied* column so you can see at a glance what's gone quiet. **Fork the repo** to keep your own tracker — the daily listings refresh runs automatically via GitHub Actions on any fork (`.github/workflows/refresh.yml`), no local machine needed. See [USAGE.md](USAGE.md) for the full script reference.
+
 ## How this works
 
 A script pulls the latest active listings from the source repos below every day, merges and deduplicates them by company + role + location, and rewrites this index and the per-category files in [`listings/`](listings/). See [ATTRIBUTION.md](ATTRIBUTION.md) for source licensing and credit, and [USAGE.md](USAGE.md) for how to run the scripts yourself.
 
-Last refreshed: 2026-06-29 04:03 UTC. Sources currently live: simplify-2026, vanshb03-2026, vanshb03-2027.
+Last refreshed: 2026-06-30 03:26 UTC. Sources currently live: simplify-2026, vanshb03-2026, vanshb03-2027.
 
-**Active listings:** 1228 (of 13865 total seen across all sources)
+**Active listings:** 1233 (of 13704 total seen across all sources)
 
 See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.
 
@@ -26,4 +39,4 @@ See [APPLICATIONS.md](APPLICATIONS.md) for personal application tracking.
 | [Other](listings/other.md) | 111 |
 | [Product Management](listings/product-management.md) | 22 |
 | [Quantitative Finance](listings/quantitative-finance.md) | 46 |
-| [Software Engineering](listings/software-engineering.md) | 386 |
+| [Software Engineering](listings/software-engineering.md) | 391 |

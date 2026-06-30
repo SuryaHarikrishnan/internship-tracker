@@ -162,6 +162,21 @@ def write_listings(listings, fetched_sources):
         "**Summer 2026 internships tracker**, or a **new grad software engineering jobs list**, "
         "this aggregates several of those trackers so you don't have to check each one.\n",
         "⭐ Star this repo to get notified of new listings, or watch it for daily updates.\n",
+        "## Track your own applications, not just browse listings\n",
+        "Most listing repos stop at the list. This one also gives you a personal application "
+        "tracker that lives next to the data:\n",
+        "```\n"
+        "git clone https://github.com/SuryaHarikrishnan/internship-tracker\n"
+        "cd internship-tracker\n"
+        "python scripts/track.py add \"Company\" \"Role\" \"2026-06-29\" \"Applied\"\n"
+        "python scripts/track.py render\n"
+        "```\n",
+        "This writes to `data/applications.csv` and regenerates "
+        "[APPLICATIONS.md](APPLICATIONS.md) with a *days-since-applied* column so you can see "
+        "at a glance what's gone quiet. **Fork the repo** to keep your own tracker — the daily "
+        "listings refresh runs automatically via GitHub Actions on any fork "
+        "(`.github/workflows/refresh.yml`), no local machine needed. See "
+        "[USAGE.md](USAGE.md) for the full script reference.\n",
         "## How this works\n",
         "A script pulls the latest active listings from the source repos below every day, "
         "merges and deduplicates them by company + role + location, and rewrites this index "
