@@ -1,4 +1,4 @@
-# Data Science, AI & Machine Learning (424)
+# Data Science, AI & Machine Learning (422)
 
 [← back to index](../README.md)
 
@@ -87,7 +87,6 @@
 | [Meta](https://www.metacareers.com/jobs/2774289902955470) | Research Scientist Intern - State Estimation for Dexterous Manipulation | Redmond, WA | Summer 2026, Fall 2026 | 2026-06-16 | 15 | simplify-2026 |
 | [Definity Financial](https://hdks.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/9150) | Reporting Specialist Co-op/Intern | Mississauga, ON, Canada, Kitchener, ON, Canada | Fall 2026 | 2026-06-16 | 15 | simplify-2026 |
 | [Definity Financial](https://hdks.fa.ca2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/9152) | Data Analyst Co-op/Intern | Toronto, ON, Canada | Summer 2026, Fall 2026 | 2026-06-16 | 15 | simplify-2026 |
-| [JINGDONG](https://jd.wd103.myworkdayjobs.com/Campus_Career_Site/job/GBR-London/Business-Analysis-Intern_JR102744) | Business Analysis Intern | London, UK | Fall 2026, Winter 2027, Spring 2027, Summer 2027 | 2026-06-16 | 15 | simplify-2026 |
 | [SDSU Research Foundation](https://careers-sdsurf.icims.com/jobs/20513/job?mobile=true&needsRedirect=false) | Undergraduate Student - Port Contamination Project | San Diego, CA | N/A | 2026-06-16 | 15 | simplify-2026 |
 | [TikTok](https://lifeattiktok.com/search/7532267134924867847) | Data Analyst Intern - TikTok Shop AMS Data Science | Seattle, WA | Summer 2026 | 2026-06-15 | 16 | simplify-2026 |
 | [TikTok](https://lifeattiktok.com/search/7532254890627696903) | Data Scientist Intern - TikTok Shop User Product DS | Seattle, WA | Summer 2026 | 2026-06-15 | 16 | simplify-2026 |
@@ -269,7 +268,6 @@
 | [TikTok](https://lifeattiktok.com/search/7623531261580036405) | Machine Learning Engineer - Global E-Commerce Content Recommendation | San Jose, CA | Summer 2026 | 2026-04-03 | 89 | simplify-2026 |
 | [Physical Intelligence](https://jobs.ashbyhq.com/physicalintelligence/f83ba447-2261-4832-95db-a2f88454e0ba/application) | Research Scientist | SF | N/A | 2026-04-03 | 89 | simplify-2026 |
 | [SharkNinja](https://job-boards.greenhouse.io/sharkninjaoperatingllc/jobs/4669676006) | Applied AI & Analytics Co-op | Miami, FL | Fall 2026 | 2026-04-02 | 90 | simplify-2026 |
-| [Snap](https://wd1.myworkdaysite.com/recruiting/snapchat/snap/job/London-United-Kingdom/Machine-Learning-Engineering-Intern_R0045123) | Machine Learning Engineer Intern | London, UK | Summer 2026 | 2026-04-02 | 90 | simplify-2026 |
 | [HEXAWARE](https://fa-etqo-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/623864) | Intern Data Engineer | United States | Summer 2026 | 2026-04-01 | 91 | simplify-2026 |
 | [ByteDance](https://jobs.bytedance.com/en/position/7623536303630469381/detail) | Research Scientist in Large Language Model - LLM | San Jose, CA | N/A | 2026-04-01 | 91 | simplify-2026 |
 | [ByteDance](https://jobs.bytedance.com/en/position/7623545981743286533/detail) | Research Scientist in Speech Foundation Model – Graduates - Seed - PhD | San Jose, CA | N/A | 2026-04-01 | 91 | simplify-2026 |

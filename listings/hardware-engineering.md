@@ -1,4 +1,4 @@
-# Hardware Engineering (197)
+# Hardware Engineering (195)
 
 [← back to index](../README.md)
 
@@ -87,7 +87,6 @@
 | [Daktronics](https://careers-daktronics.icims.com/jobs/7395/job?mobile=true&needsRedirect=false) | Game Day Technician | State College, PA | N/A | 2026-06-02 | 29 | simplify-2026 |
 | [Astera Labs](https://job-boards.greenhouse.io/asteraearlycareer2026/jobs/4609356005) | Firmware Engineer Intern | Vancouver, BC, Canada | Summer 2026 | 2026-06-02 | 29 | simplify-2026 |
 | [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/36934) | Software Development Co-op | Sunnyvale, CA | Fall 2026, Winter 2026 | 2026-06-01 | 30 | simplify-2026 |
-| [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/36276) | Design Co-op/Intern | Ottawa, ON, Canada | Fall 2026 | 2026-06-01 | 30 | simplify-2026 |
 | [Diversified Automation](https://jobs.lever.co/diversified-automation/3cea02c8-9a43-4542-96bb-df69a874f146/apply) | Hardware Engineering Co-op | Louisville, KY | Summer 2026 | 2026-05-28 | 34 | simplify-2026 |
 | [Intel](https://intel.wd1.myworkdayjobs.com/en-us/external/job/US-Arizona-Phoenix/Silicon-Performance-Validation-and-Characterization-Intern_JR0284310) | Silicon Performance Validation and Characterization Intern | Phoenix, AZ | Summer 2026 | 2026-05-27 | 35 | simplify-2026 |
 | [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/36486) | Photonic Integrated Circuits Test Co-op | Sunnyvale, CA | Fall 2026, Winter 2026 | 2026-05-27 | 35 | simplify-2026 |
@@ -137,7 +136,6 @@
 | [XPENG Motors](https://job-boards.greenhouse.io/xpengmotors/jobs/8535409002) | VLA Deployment AI Intern | Santa Clara, CA | Summer 2026 | 2026-05-05 | 57 | simplify-2026 |
 | [Stoke Space](https://stokespace.com/careers/current-openings?gh_jid=5987663004) | Software Intern - Software | Kent, WA | Spring 2027 | 2026-05-04 | 58 | simplify-2026 |
 | [Astranis](https://job-boards.greenhouse.io/astranis/jobs/4677973006) | Reliability Test Intern | SF | Fall 2026 | 2026-05-04 | 58 | simplify-2026 |
-| [Cirrus Logic](https://jobs.eu.lever.co/cirrus/a0ee59a9-cfce-410a-b182-459a5da9ba95/apply) | Analog/Mixed-Signal Verification Intern Co-op | Austin, TX | Fall 2026 | 2026-05-01 | 61 | simplify-2026 |
 | [Astranis](https://job-boards.greenhouse.io/astranis/jobs/4677338006) | FPGA Intern | SF | Fall 2026 | 2026-04-30 | 62 | simplify-2026 |
 | [Astranis](https://job-boards.greenhouse.io/astranis/jobs/4677337006) | FPGA Associate Intern | SF | Fall 2026 | 2026-04-30 | 62 | simplify-2026 |
 | [Nokia](https://fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/34231) | Hardware Developer Engineer Co-op/Intern | Ottawa, ON, Canada | Fall 2026 | 2026-04-30 | 62 | simplify-2026 |

@@ -1,4 +1,4 @@
-# Software Engineering (400)
+# Software Engineering (397)
 
 [← back to index](../README.md)
 
@@ -47,7 +47,6 @@
 | [Altasciences](https://altasciences.wd1.myworkdayjobs.com/Careers/job/Overland-Park-Kansas/Process-Innovation---Software-Engineering-Intern_R102750) | Software Engineer Intern | Overland Park, KS | Summer 2026 | 2026-06-24 | 7 | simplify-2026 |
 | [Palantir](https://jobs.lever.co/palantir/75cc1c09-8ebd-44c8-b3bc-d122cd1fecb3/apply) | Palantir Software Engineer Intern - Forward Deployed Software Engineer - Commercial | Chicago, IL | Summer 2026 | 2026-06-24 | 7 | simplify-2026 |
 | [Copart](https://copart.wd12.myworkdayjobs.com/copart/job/Dallas-TX---Headquarters/Database-Engineering-Intern_JR109636) | Database Engineer Intern | Dallas, TX | Summer 2026 | 2026-06-24 | 7 | simplify-2026 |
-| [Lunon](https://jobs.ashbyhq.com/Lunon/6700bbef-8be9-46c7-8257-f1a3a0c0aa45/application) | Software Engineer Intern | SF | Summer 2026 | 2026-06-24 | 7 | simplify-2026 |
 | [Later](https://job-boards.greenhouse.io/later/jobs/8604889002) | AI Automation Engineer Co-op | Vancouver, BC, Canada | Summer 2026 | 2026-06-24 | 7 | simplify-2026 |
 | [Tesla](https://www.tesla.com/careers/search/job/274754) | Product Management Intern - Product Engineer - Applications Engineering | Fremont, CA | Fall 2026 | 2026-06-24 | 7 | simplify-2026 |
 | [Markem-Imaje](https://careers.dovercorporation.com/job/Keene-Software-Engineer-Intern-NH-03431/1404722033) | Software Engineer Intern | Keene, NH | Fall 2026 | 2026-06-24 | 7 | simplify-2026 |
@@ -64,7 +63,6 @@
 | [Muru](https://www.murumed.com/job-listings/web-software-engineer-intern) | Full-Stack Software Engineer Intern | New York, NY | Fall 2026 | 2026-06-23 | 8 | simplify-2026 |
 | [Muru](https://www.murumed.com/job-listings/software-engineer-intern) | Mobile Software Engineer Intern | New York, NY | Fall 2026 | 2026-06-23 | 8 | simplify-2026 |
 | [Berkshire Hathaway Energy](https://fa-essf-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_1/job/10005280) | Sys & Development Analyst | Las Vegas, NV, Des Moines, IA, Sioux City, IA, Portland, OR | N/A | 2026-06-22 | 9 | simplify-2026 |
-| [Kinaxis](https://careers-kinaxis.icims.com/jobs/34832/job?mobile=true&needsRedirect=false) | Software Engineer Co-op/Intern - Developer Framework | Ottawa, ON, Canada | Fall 2026 | 2026-06-22 | 9 | simplify-2026 |
 | [SDSU Research Foundation](https://careers-sdsurf.icims.com/jobs/20550/job?mobile=true&needsRedirect=false) | NIWC – Undergraduate Student 2 or 3 - Communications Division Engineering Support | San Diego, CA | N/A | 2026-06-22 | 9 | simplify-2026 |
 | [Kanshe Infotech](https://jobs.smartrecruiters.com/KansheInfotech/744000066239151) | Python Fullstack Training | Cincinnati, OH | N/A | 2026-06-22 | 9 | simplify-2026 |
 | [AG Technologies](https://jobs.smartrecruiters.com/AGTechnologies1/104662317) | DevOps Java OBIEE Salesforce Training and Placement | Dallas, TX | N/A | 2026-06-22 | 9 | simplify-2026 |
@@ -261,7 +259,6 @@
 | [Tessera Labs](https://jobs.ashbyhq.com/tessera-labs/4614d053-2c8f-4317-8cd2-1d1290721b06/application) | Software Engineering Intern - Frontend | San Jose, CA | Summer 2026 | 2026-04-08 | 84 | simplify-2026 |
 | [Eulerity](https://job-boards.greenhouse.io/eulerity/jobs/4671025006) | Mobile iOS Developer Intern | NYC | Summer 2026 | 2026-04-07 | 85 | simplify-2026 |
 | [Eulerity](https://job-boards.greenhouse.io/eulerity/jobs/4671031006) | Android Developer Intern | NYC | Summer 2026 | 2026-04-07 | 85 | simplify-2026 |
-| [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5099529007) | Frontend Software Engineer Intern | San Mateo, CA | Fall 2026 | 2026-04-07 | 85 | simplify-2026, vanshb03-2026, vanshb03-2027 |
 | [Verkada](https://job-boards.greenhouse.io/verkada/jobs/5099422007) | Backend Software Engineering Intern | San Mateo, CA | Fall 2026 | 2026-04-07 | 85 | simplify-2026 |
 | [Notion](https://jobs.ashbyhq.com/notion/5b15697c-fa91-4511-9482-c98a6ff29f90/application) | Software Engineer Intern | SF | Fall 2026 | 2026-04-07 | 85 | simplify-2026 |
 | [Omnis](https://ats.rippling.com/omnis-corporation/jobs/e389ff2d-5be5-4571-8cc1-f361a139b753) | Software Engineering Internship/Co-Op | Venice, CA | Summer 2026 | 2026-04-06 | 86 | simplify-2026 |
