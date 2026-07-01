@@ -1,4 +1,4 @@
-# Data Science, AI & Machine Learning (422)
+# Data Science, AI & Machine Learning (426)
 
 [← back to index](../README.md)
 
@@ -67,6 +67,7 @@
 | [Bank of Montreal](https://bmo.wd3.myworkdayjobs.com/Campus/job/Toronto-ON-CAN/Database-Analyst--Fall-2026--Co-op-Internship----4-months_R260018622-1) | Database Analyst Co-op/Intern | Toronto, ON, Canada | Fall 2026 | 2026-06-22 | 9 | simplify-2026 |
 | [Core & Main](https://coreandmain.wd1.myworkdayjobs.com/en-US/coreandmain/job/Saint-Louis-MO-63146/Intern---Data-Engineering----Corp_45804) | Data Engineering Intern | St. Louis, MO | Summer 2026 | 2026-06-22 | 9 | simplify-2026 |
 | [CAE](https://cae.wd3.myworkdayjobs.com/career/job/Little-Rock/Configuration-and-Data-Management-Analyst-Co-Op_122365) | Configuration and Data Management Analyst Co-op | Little Rock, AR | Summer 2026 | 2026-06-22 | 9 | simplify-2026 |
+| [Together AI](https://job-boards.greenhouse.io/togetherai/jobs/5168929007) | Research reinforcement learning & Post-Training Systems Intern - Turbo | SF | Fall 2026 | 2026-06-22 | 9 | simplify-2026 |
 | [Intuitive Surgical](https://jobs.smartrecruiters.com/Intuitive/744000133458290) | Computer Vision Engineer Intern | Sunnyvale, CA | Fall 2026 | 2026-06-22 | 9 | simplify-2026 |
 | [STEM Xpert](https://jobs.smartrecruiters.com/StemXpert1/77580792) | Tibco Spotfire | Alpharetta, GA | N/A | 2026-06-22 | 9 | simplify-2026 |
 | [Tencent](https://tencent.wd1.myworkdayjobs.com/OA_Huoshui_Platform/job/UK-London/Video-Generation-Content-Understanding-and-Feedback-Research-Intern_R107680) | Video Generation Content Understanding and Feedback Research Intern | London, UK | Summer 2026 | 2026-06-22 | 9 | simplify-2026 |
@@ -102,6 +103,8 @@
 | [Deloitte](https://apply.deloitte.com/en_US/careers/JobDetail/Hiring-our-Heroes-Fellowship-12-week-program-AI-Engineering/356045) | Hiring Our Heroes Fellowship - AI & Engineering | Atlanta, GA | N/A | 2026-06-15 | 16 | simplify-2026 |
 | [Mercer University](https://merceruniversity.wd1.myworkdayjobs.com/student/job/Macon-Campus/Archival-digitization_JR102883) | Archival Digitization | Macon, GA | N/A | 2026-06-13 | 18 | simplify-2026 |
 | [Harbinger Motors](https://job-boards.greenhouse.io/harbingermotors/jobs/5164341007) | Production Data Analytics Intern | Westminster, CA | Fall 2026 | 2026-06-13 | 18 | simplify-2026 |
+| [Together AI](https://job-boards.greenhouse.io/togetherai/jobs/5157559007) | Systems Research Engineer Intern - GPU Programming | SF | Fall 2026 | 2026-06-12 | 19 | simplify-2026 |
+| [Together AI](https://job-boards.greenhouse.io/togetherai/jobs/5157759007) | Research Intern - Inference | SF | Fall 2026 | 2026-06-12 | 19 | simplify-2026 |
 | [Institute of Foundation Models](https://jobs.lever.co/ifm-us/3eec355c-6dde-4a3e-8cdf-b2a8930d5678/apply) | AI Research Intern | Sunnyvale, CA | Summer 2026 | 2026-06-12 | 19 | simplify-2026 |
 | [University of Arkansas](https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Graduate-Assistant---Data-Science-9-MONTH_R0082554-1) | Graduate Assistant | Fayetteville, AR | N/A | 2026-06-12 | 19 | simplify-2026 |
 | [General Motors](https://generalmotors.wd5.myworkdayjobs.com/en-CA/Careers_GM/job/Warren-Michigan-United-States-of-America/XMLNAME-2026-Fall-Intern---Research---Development--AI-ML_JR-202612795) | Research and Development Intern - Research & Development: AI/ML | Mountain View, CA, Warren, MI | Fall 2026 | 2026-06-12 | 19 | simplify-2026 |
@@ -112,6 +115,7 @@
 | [Sandisk](https://jobs.smartrecruiters.com/Sandisk/744000131541969) | Technology Development Intern | Milpitas, CA | Summer 2026, Fall 2026 | 2026-06-10 | 21 | simplify-2026 |
 | [Walleye Capital](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4679224006) | Risk Technology Analyst Intern | NYC | Summer 2027 | 2026-06-10 | 21 | simplify-2026 |
 | [Walleye Capital](https://job-boards.greenhouse.io/walleyecapital-external-students/jobs/4676587006) | Investment Data Science Intern | NYC | Summer 2027 | 2026-06-10 | 21 | simplify-2026 |
+| [Evolver](https://job-boards.greenhouse.io/evolver/jobs/4254540009) | Applied Data Science Intern | Palo Alto, CA | Summer 2026 | 2026-06-10 | 21 | simplify-2026 |
 | [SHEIN](https://fa-exjq-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/SHEIN/job/USA87554940) | Data Analysis Intern | United States | Summer 2026 | 2026-06-10 | 21 | simplify-2026 |
 | [EXL](https://fa-ewjt-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_2/job/15428) | AI Intern - Insurance & Healthcare - Agentic AI | United States | Summer 2026 | 2026-06-10 | 21 | simplify-2026 |
 | [Block](http://block.xyz/careers/jobs/5108007008?gh_jid=5108007008) | Applied Research Intern PhD / Graduate Co-op | Oakland, CA | Fall 2026, Winter 2027 | 2026-06-09 | 22 | simplify-2026 |
