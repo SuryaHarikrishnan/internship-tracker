@@ -2,7 +2,11 @@ name: Daily listings refresh
 
 on:
   schedule:
-    - cron: "0 13 * * *"
+    - cron: "0 6 * * *"   # 6am UTC
+    - cron: "0 9 * * *"   # 9am UTC
+    - cron: "0 13 * * *"  # 1pm UTC
+    - cron: "0 17 * * *"  # 5pm UTC
+    - cron: "0 21 * * *"  # 9pm UTC
   workflow_dispatch: {}
 
 permissions:
@@ -19,7 +23,11 @@ jobs:
           python-version: "3.x"
 
       - name: Refresh listings
-        run: python scripts/scrape.py
+        id: scrape
+        run: |
+          output=$(python scripts/scrape.py)
+          echo "$output"
+          echo "summary=$output" >> $GITHUB_OUTPUT
 
       - name: Commit and push if changed
         run: |
@@ -27,8 +35,8 @@ jobs:
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add -A
-            git commit -m "Daily listings refresh - $(date -u +%Y-%m-%d)"
+            git commit -m "Listings refresh $(date -u +%H:%M) UTC — ${{ steps.scrape.outputs.summary }}"
             git push
           else
-            echo "No changes, skipping commit."
+            echo "No changes since last refresh, skipping commit."
           fi
